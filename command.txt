@@ -1,0 +1,13 @@
+g++ -g -static .\threshold.cpp .\bmp.cpp -o threshold.exe
+
+threshold.exe ExperimentalImage/a.bmp ExperimentalImage/b.bmp 
+threshold.exe ExperimentalImage/a.bmp ExperimentalImage/b.bmp ExperimentalImage/c.bmp
+threshold.exe ExperimentalImage/a.bmp
+
+memo:
+//大津法、ガウシアン、メディアン、ミーン
+//ソーベルとプレヴィット(255を超えたら255に直す)
+ラプラシアンフィルタ(画素値が無い場合は0とし，0以下の場合は0に，255を超える場合は255に)、ハフ変換、
+//キャニ―エッジ
+ラベリング処理と膨張と縮小
+テンプレートマッチング
