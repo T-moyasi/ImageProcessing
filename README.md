@@ -1,1 +1,3 @@
 # ImageProcessing
+OpenCVを使わずにWindows bitmap形式に変換した画像を処理しようという試みです。
+大き目の問題があるものの時間がないので保留しています。
